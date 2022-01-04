@@ -4,9 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+@Data
 public class ApplicationProperties {
     private final static Logger logger = (Logger) LoggerFactory.getLogger(ApplicationProperties.class);
     private final static String configFile = "application.properties";

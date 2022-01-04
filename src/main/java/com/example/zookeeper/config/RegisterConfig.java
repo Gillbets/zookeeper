@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Configuration
+//@Configuration
 @PropertySource("classpath:zookeeper.properties")
 public class RegisterConfig {
     private Map<String, String> cache = new HashMap<>();

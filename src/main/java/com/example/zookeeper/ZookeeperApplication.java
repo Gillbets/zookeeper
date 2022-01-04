@@ -1,5 +1,7 @@
 package com.example.zookeeper;
 
+import com.example.zookeeper.config.ZookeeperWatcher;
+import com.example.zookeeper.service.impl.RegisterServiceImpl;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
@@ -15,6 +17,12 @@ public class ZookeeperApplication {
     public static void main(String[] args) {
         SpringApplication.run(ZookeeperApplication.class, args);
 
+        ZookeeperWatcher zookeeperWatcher = new ZookeeperWatcher();
+        try {
+            Thread.sleep(Long.MAX_VALUE);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
     }
 
